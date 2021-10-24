@@ -15,10 +15,9 @@ def gui(partition_guid,partition_uniqueid,partition_firstlba,partition_lastlba,p
     treeview.pack()
 
     for i,d in enumerate(partition_name):
-        treeview.column(i, width=350, anchor="center")
+        treeview.column(i, width=200, anchor="center")
         treeview.heading(i, text='partition'+str(i), anchor="center")
 
-    print(partition_guid)
     treelist=[]
     treename=["partition_guid","partition_uniqueid","partition_firstlba","partition_lastlba","partition_Aflag","partition_name","mft_address","mftmirr_address"]
     treelist.append(partition_guid)
